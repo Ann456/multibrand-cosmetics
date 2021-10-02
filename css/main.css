@@ -410,6 +410,11 @@ a {
   background-position: center;
 }
 
+.filters__button-center {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
 .section-footer {
   background-image: url(..//images/bgbox.png);
   background-repeat: no-repeat;
