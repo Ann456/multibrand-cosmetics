@@ -1,0 +1,41 @@
+.section-contacts {
+  background-image: url(..//images/bgbox.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container.contacts {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__link {
+    margin-top: 10px;
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  &__title {
+    color: #524848;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+}
+
+.header-tel-email {
+  &__item {
+    margin-top: 10px;
+  }
+  &__link {
+    color: inherit;
+  }
+}

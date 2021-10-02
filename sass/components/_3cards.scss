@@ -1,0 +1,202 @@
+/*3portfolio*/
+/*--Портфолио--*/
+.section-projects {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.filters {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item {
+      &:nth-child(-n + 3) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 6px 22px;
+    min-width: 29px;
+
+    font-family: "Roboto", ‘Raleway’ sans-serif;
+    font-style: normal;
+    background: rgb(245, 229, 232);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: 0;
+
+    transition: background 250ms $timing-function, color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background: rgb(207, 120, 134);
+      color: $footer-logo-color;
+      box-shadow: 0px 3px 1px $modal-btn-close-border,
+        0px 1px 2px $filters-box-shadow, 0px 2px 2px r$modal-box-shadow1;
+    }
+  }
+}
+
+.project {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 3 * 45px) / 3);
+      margin: 15px;
+    }
+  }
+}
+
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25%;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 2px 2px $modal-box-shadow1,
+      2px 4px 4px $project-link-box-shadow1,
+      1px 4px 6px $project-link-box-shadow2;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 63px 24px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+
+    color: $footer-logo-color;
+
+    @media screen and (max-width: 479px) {
+      padding: 77px 24px;
+      font-size: 3.758vw; /*18px*/
+    }
+    @media screen and (min-width: 480px) {
+      padding: 77px 24px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px;
+    }
+
+    .project__item:focus &,
+    .project__item:hover & {
+      transform: translateY(0);
+      transition: transform 250ms $timing-function;
+    }
+  }
+
+  &__title,
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 0.5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 30%;
+    text-align: center;
+
+    transition: transform 250ms $timing-function;
+    transform: translateY(100%);
+  }
+}
+
+.project-thumb::before {
+  background: rgb(207, 120, 134);
+  border-radius: 25%;
+
+  .project__item:focus &,
+  .project__item:hover & {
+    transform: translateY(0);
+    transition: transform 250ms $timing-function;
+  }
+}
+
+.project-border {
+  /*border-left: 1px solid $project-item-border;
+  border-right: 1px solid $project-item-border;
+  border-bottom: 1px solid $project-item-border;*/
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  &__title {
+    font-family: "Roboto", ‘Raleway’ sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    line-height: 2;
+    color: $body-color;
+
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    color: $tel-color;
+    letter-spacing: 0.03em;
+    line-height: 1.9;
+    margin: 0;
+  }
+}
