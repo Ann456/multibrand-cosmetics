@@ -135,6 +135,10 @@ a {
   color: inherit;
 }
 
+.header-tel__link {
+  color: #6e4f4f;
+}
+
 .section-contacts {
   background-image: url(..//images/bgbox.png);
   background-repeat: no-repeat;
@@ -458,6 +462,12 @@ a {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 479px) {
+  .filters__button-center {
+    margin-left: 90px;
+  }
+}
+
 .project__img {
   margin-left: auto;
   margin-right: auto;
@@ -496,6 +506,7 @@ a {
 
 /* mobile-menu-container */
 .menu-container {
+  padding-bottom: 15px;
   background-image: url(..//images/bgbox.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -535,6 +546,20 @@ a {
   color: #524848;
 }
 
+.mobile {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* button-open */
 .menu-toggle {
   min-height: 40px;
@@ -564,7 +589,7 @@ a {
 }
 
 .menu-toggle:hover, .menu-toggle:focus {
-  color: #2196f3;
+  color: red;
 }
 
 /* menu-container__mobile */
@@ -606,7 +631,7 @@ a {
   /*40px*/
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #524848;
+  color: #5e3131;
   text-decoration: none;
   margin-left: 25px;
   padding: 0;
@@ -614,7 +639,7 @@ a {
 
 .mobile-nav__link:hover, .mobile-nav__link:focus {
   text-decoration: underline;
-  color: #2196f3;
+  color: #cf7886;
 }
 
 .mobile-nav__item {
@@ -622,15 +647,15 @@ a {
 }
 
 .mobile-nav__item:first-child {
-  margin-top: 20px;
+  margin-top: 48px;
 }
 
 .mobile-nav__item:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 302px;
 }
 
 .mobile-nav__link--current {
-  color: #2196f3;
+  color: #cf7886;
 }
 
 .mobile-header-tel-email__link--tel {
@@ -641,7 +666,7 @@ a {
   /*34px*/
   line-height: 1.18;
   text-decoration: none;
-  color: #2196f3;
+  color: #cf7886;
   margin-left: 25px;
   margin-bottom: 32px;
 }
@@ -697,7 +722,7 @@ a {
   font-size: 3.75vw;
   /*18px*/
   line-height: 1.22;
-  color: #2196f3;
+  color: #cf7886;
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

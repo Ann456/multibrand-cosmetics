@@ -1,7 +1,4 @@
 .container.header {
-  @media (max-width: 767px) {
-    display: none;
-  }
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -40,5 +37,11 @@
   &__link {
     text-decoration: none;
     color: inherit;
+  }
+}
+
+.header-tel {
+  &__link {
+    color: rgb(110, 79, 79);
   }
 }

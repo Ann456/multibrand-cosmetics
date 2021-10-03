@@ -1,5 +1,6 @@
 /* mobile-menu-container */
 .menu-container {
+  padding-bottom: 15px;
   background-image: url(..//images/bgbox.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,9 +32,15 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #524848;
+  color: $body-color;
 }
 
+.mobile {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /* button-open */
 .menu-toggle {
   min-height: 40px;
@@ -56,10 +63,9 @@
 
   &:hover,
   &:focus {
-    color: rgb(207, 120, 134);
+    color: red;
   }
 }
-
 /* menu-container__mobile */
 
 .menu-container {
@@ -90,7 +96,7 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
 
-    color: $body-color;
+    color: rgb(94, 49, 49);
     text-decoration: none;
 
     margin-left: 25px;
@@ -99,18 +105,23 @@
     &:hover,
     &:focus {
       text-decoration: underline;
-      color: $rgb(207, 120, 134);
+      color: rgb(207, 120, 134);
     }
   }
 
   &__item {
     margin-bottom: 20px;
     &:first-child {
-      margin-top: 20px;
+      margin-top: 48px;
     }
+
     &:last-child {
-      margin-bottom: 100px;
+      margin-bottom: 302px;
     }
+  }
+
+  &__link--current {
+    color: rgb(207, 120, 134);
   }
 }
 
@@ -138,7 +149,7 @@
 
     text-decoration: none;
 
-    color: rgb(207, 120, 134);
+    color: $tel-color;
 
     margin-left: 25px;
     margin-bottom: 64px;

@@ -42,24 +42,87 @@
                         </ul>
                     </nav>
                 </div>
+                <!-- Mobile-menu -->
+                <div class="mobile">
+                    <!-- button-open -->
+                    <a class="logo" href="index.html" title="Логотип компании">Repair&Care</a>
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                
+                    <div class="menu-container js-menu-container" id="mobile-nav">
+                        <!-- button-close -->
+                        <button class="menu-toggle js-close-menu">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                
+                        <!-- menu-container__mobile -->
+                        <div class="menu-container__mobile">
+                            <!-- mobile-nav -->
+                            <ul class="mobile-nav">
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="10about.html" title="О компании">О
+                                        компании</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="9dellivery.html"
+                                        title="Доставка и оплата">Доставка и оплата</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="8contacts.html"
+                                        title="Контакты">Контакты</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" title="Отзывы">Отзывы</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" title="Новости">Новости</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" title="Возврат">Возврат товара и
+                                        средств</a></li>
+                            </ul>
+                
+                            <!-- Tel E-mail-->
+                            <ul class="mobile-header-tel-email">
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--tel" href="tel:+380961111111" title="Номер телефона">
+                                        +38 096 111 1111
+                                    </a>
+                                </li>
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--email" href="mailto:info@devstudio.com"
+                                        title="Почтовый адресс">
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- mobile-social-links-->
+                            <ul class="mobile-social-links">
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link"
+                                        href="https://www.instagram.com/repaircare_shop/" title="Instagram">Instagram</a></li>
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link" href="#"
+                                        title="Facebook">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
             </div>
+            
         </section>
     </header>
 
     <section class="section">
-        <!--filters-->
-        <ul class="section-projects__filters filters">
-            <li class="filters__item"><button class="filters__button" type="button">Лицо</button>
-            </li>
-            <li class="filters__item"><button class="filters__button" type="button">Тело</button></li>
-            <li class="filters__item"><button class="filters__button" type="button">Волосы</button></li>
-            <li class="filters__item"><button class="filters__button" type="button">Наборы</button></li>
-            <li class="filters__item"><button class="filters__button" type="button"> <a href="5man.html">Для мужчин</a></button>
-            </li>
-            <li class="filters__item"><button class="filters__button" type="button">Для детей</button></li>
-        </ul>
-
         <div class="container man">
+            <!--filters-->
+            <ul class="section-projects__filters filters">
+                <li class="filters__item"><button class="filters__button" type="button">Лицо</button>
+                </li>
+                <li class="filters__item"><button class="filters__button" type="button">Тело</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Волосы</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Наборы</button></li>
+                <li class="filters__item"><button class="filters__button" type="button"> <a href="5man.html">Для мужчин</a></button>
+                </li>
+                <li class="filters__item"><button class="filters__button" type="button">Для детей</button></li>
+            </ul>
             <!--Projects-->
             <ul class="section-projects__project project">
                 <!--project 1-->
@@ -110,8 +173,7 @@
                         </div>
                     </a>
                 </li>
-               
-                <!--project 13-->
+                <!--project 3-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -135,7 +197,6 @@
                         </div>
                     </a>
                 </li>
-                
                 <!--project 4-->
                 <li class="project__item">
                     <a href="#" class="project__link">
@@ -167,7 +228,6 @@
                         </div>
                     </a>
                 </li>
-                
                 <!--project 5-->
                 <li class="project__item">
                     <a href="#" class="project__link">
@@ -270,7 +330,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 12-->
+                <!--project 10-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -296,8 +356,6 @@
                         </div>
                     </a>
                 </li>
-                
-                
                 <!--project 11-->
                 <li class="project__item">
                     <a href="#" class="project__link">
@@ -320,7 +378,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 16-->
+                <!--project 12-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -341,9 +399,7 @@
                         </div>
                     </a>
                 </li>
-                
-                
-                <!--project 14-->
+                <!--project 13-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -365,7 +421,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 15-->
+                <!--project 14-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -386,8 +442,7 @@
                         </div>
                     </a>
                 </li>
-                
-                <!--project 17-->
+                <!--project 15-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -406,7 +461,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 18-->
+                <!--project 16-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -427,7 +482,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 19-->
+                <!--project 17-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -446,7 +501,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 20-->
+                <!--project 18-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -466,7 +521,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 3-->
+                <!--project 19-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -488,7 +543,7 @@
                         </div>
                     </a>
                 </li>
-                <!--project 10-->
+                <!--project 20-->
                 <li class="project__item">
                     <a href="#" class="project__link">
                         <div class="project__thumb project-thumb man">
@@ -553,3 +608,10 @@
             </div>
         </section>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
