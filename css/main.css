@@ -24,7 +24,7 @@ p,
 
 img {
   display: block;
-  min-width: 100%;
+  /*min-width: 100%;*/
   height: auto;
 }
 
@@ -413,6 +413,11 @@ a {
 .filters__button-center {
   margin-left: 30px;
   margin-bottom: 10px;
+}
+
+.project__img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-footer {
