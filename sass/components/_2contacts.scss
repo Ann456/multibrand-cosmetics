@@ -15,23 +15,42 @@
   justify-content: space-around;
   align-items: center;
 
+  &__span {
+    @media screen and (max-width: 479px) {
+      display: none;
+    }
+  }
+
   &__link {
+    @media screen and (max-width: 479px) {
+      display: none;
+    }
     margin-top: 10px;
     text-decoration: underline;
     color: inherit;
   }
 
   &__title {
+    @media screen and (max-width: 479px) {
+      color: red;
+      font-size: 20px;
+    }
     color: #524848;
     text-align: center;
   }
 
   &__text {
+    @media screen and (max-width: 479px) {
+      display: none;
+    }
     font-size: 20px;
   }
 }
 
 .header-tel-email {
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
   &__item {
     margin-top: 10px;
   }
