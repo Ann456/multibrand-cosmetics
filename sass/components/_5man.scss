@@ -16,7 +16,9 @@
   }
 }
 
-.project__img {
-  margin-left: auto;
-  margin-right: auto;
+.project {
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

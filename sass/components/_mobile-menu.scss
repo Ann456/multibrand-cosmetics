@@ -41,6 +41,12 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.mobile__logo {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 /* button-open */
 .menu-toggle {
   min-height: 40px;

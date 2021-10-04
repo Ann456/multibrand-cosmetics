@@ -4,12 +4,14 @@
 }
 
 .menu {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  display: flex;
-  justify-content: space-between;
-
+  @media screen and (min-width: 1189px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__link {
     color: inherit;
   }
@@ -22,7 +24,7 @@
 }
 
 .menu-nav {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   display: flex;
@@ -41,6 +43,9 @@
 }
 
 .header-tel {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   &__link {
     color: rgb(110, 79, 79);
   }

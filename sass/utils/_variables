@@ -1,5 +1,5 @@
 $logo-color: rgb(207, 120, 134);
-$body-color: #524848;
+$body-color: rgb(110, 79, 79);
 $tel-color: #757575;
 $footer-tel-color: rgba(255, 255, 255, 0.6);
 $footer-logo-color: #ffffff;
