@@ -484,6 +484,11 @@ a {
   margin-right: auto;
 }
 
+.project-thumb__title.aside {
+  padding-top: 0;
+  font-size: 9px;
+}
+
 .section-footer {
   background-image: url(..//images/bgbox.png);
   background-repeat: no-repeat;
