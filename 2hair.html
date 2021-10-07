@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <section class="section-header background">
+            <div class="container header">
+                <div class="main-menu">
+                    <nav class="menu">
+                        <!-- Logo-->
+                        <a class="menu__link" href="https://www.instagram.com/p/CTXWqMDjHoX/?utm_medium=share_sheet"
+                            title="ссылка в инстаграм">Мы в instagram</a>
+                        <a class="logo" href="index.html" title="Логотип компании">Repair&Care</a>
+
+                        <!--Menu Nav-->
+                        <ul class="menu-nav">
+                            <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--current"
+                                    href="10about.html" title="Студия">О компании</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Портфолио">Доставка и
+                                    оплата</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Отзывы</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Новости</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Возврат
+                                    товара или средств</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Mobile-menu -->
+                <div class="mobile">
+                    <a class="mobile__logo logo" href="index.html" title="Логотип компании">Repair&Care</a>
+                    <!-- button-open -->
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <div class="menu-container js-menu-container" id="mobile-nav">
+                        <!-- button-close -->
+                        <button class="menu-toggle js-close-menu">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <!-- menu-container__mobile -->
+                        <div class="menu-container__mobile">
+                            <!-- mobile-nav -->
+                            <ul class="mobile-nav">
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="10about.html"
+                                        title="О компании">О
+                                        компании</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="9dellivery.html"
+                                        title="Доставка и оплата">Доставка и оплата</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="8contacts.html"
+                                        title="Контакты">Контакты</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Отзывы">Отзывы</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Новости">Новости</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Возврат">Возврат товара и
+                                        средств</a></li>
+                            </ul>
+
+                            <!-- Tel E-mail-->
+                            <ul class="mobile-header-tel-email">
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--tel" href="tel:+380961111111"
+                                        title="Номер телефона">
+                                        +38 096 111 1111
+                                    </a>
+                                </li>
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--email" href="mailto:info@devstudio.com"
+                                        title="Почтовый адресс">
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- mobile-social-links-->
+                            <ul class="mobile-social-links">
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link"
+                                        href="https://www.instagram.com/repaircare_shop/"
+                                        title="Instagram">Instagram</a></li>
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link" href="#"
+                                        title="Facebook">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <section class="section">
+        <div class="container man">
+            <!--filters-->
+            <ul class="section-projects__filters filters">
+                <li class="filters__item"><button class="filters__button" type="button">Лицо</button>
+                </li>
+                <li class="filters__item"><button class="filters__button" type="button">Тело</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Волосы</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Наборы</button></li>
+                <li class="filters__item"><button class="filters__button" type="button"> <a href="5man.html">Для
+                            мужчин</a></button>
+                </li>
+                <li class="filters__item"><button class="filters__button" type="button"><a href="4children.html">Для
+                            детей</a></button></li>
+            </ul>
+            <!--Projects-->
+            <ul class="section-projects__project project">
+                <!--project 1-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairShSilkKeune.jpg" alt="Шампунь «Шелковый уход» — CARE SATIN OIL SHAMPOO KEUNE, 300 мл, 1000 мл (423)" width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Sodium Laureth Sulfate, Cocamidopropyl Betaine, Decyl Glucoside, PEG-200 Hydrogenated Glyceryl Palmate,
+                            Glycol Distearate, PEG-40 Hydrogenated Castor Oil, Glyceryl Laurate, Sodium Chloride, Cetrimonium Chloride, Sodium
+                            Benzoate, Citric Acid, PEG-7 Glyceryl Cocoate, Cocamide MEA, Propylene Glycol, Methoxy PEG/PPG-7/3 Aminopropyl
+                            Dimethicone, Polyquaternium-10, Panthenol, Laureth-2, Polyquaternium-7, Parfum (Fragrance), Laureth-10, Cocos Nucifera
+                            (Coconut) Oil, Formic Acid, Hydrolyzed Wheat Protein, Passiflora Incarnata (Seed) Oil, Saccharomyces/Magnesium Ferment,
+                            Gardenia Tahitensis Flower Extract, Adansonia Digitata (Seed) Oil, Saccharomyces/Iron Ferment, CI 19140 (Yellow 5),
+                            Saccharomyces/Zinc Ferment, Tocopherol, Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment, CI 14700 (Red 4).</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Шампунь «Шелковый уход» — CARE SATIN OIL SHAMPOO KEUNE, 300 мл, 1000 мл (423)</h2>
+                            <p class="project-border__text">Комплекс Satin Oil линии Care основан на уникальном сочетании набора благородных масел и природных минералов. Комплекс
+                            предназначен для тусклых и сухих волос и воздействует на все слои волоса: укрепляет структуру, увлажняет и придает
+                            здоровый блеск, а также обеспечивает оптимальный баланс для здоровья кожи головы. Масло моной и масло семян папайи
+                            проникают в самую серединку волоса и восстанавливают сухие и повреждённые участки. Сладкое миндальное масло увлажняет
+                            верхние слои, расположенные за кутикулой. Масло янгу смягчает, разглаживает и защищает волосяной ствол благодаря
+                            натуральным антиоксидантам, Омега 6 и 9, жирным кислотам. Дополнительное питание и оптимальный баланс влажности
+                            достигается благодаря природным минералам, входящие во все продукты линии Care.
+                            </p>
+                        </div>
+                   
+                </li>
+                <!--project 2-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairConSilkKeune.jpg"
+                                alt="Кондиционер «Шелковый уход» CARE SATIN OIL CONDITIONER KEUNE, 250 мл, 1000 мл (424)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Cetearyl Alcohol, Decyl Oleate, Cetrimonium Chloride, Behentrimonium Chloride, Butyrospermum Parkii (Shea)
+                            Butter, Polyquaternium-37, Propylene Glycol Dicaprylate/Dicaprate, Sodium Benzoate, Propylene Glycol, Lactic Acid,
+                            Silicone Quaternium-22, Oleyl Erucate, Hydrolyzed Wheat Protein, Panthenol, Cocos Nucifera (Coconut) Oil, PPG-3 Myristyl
+                            Ether, Isopropyl Alcohol, Parfum (Fragrance), Polyquaternium-10, PPG-1 Trideceth-6, Passiflora Incarnata (Seed) Oil,
+                            Gardenia Tahitensis Flower Extract, Saccharomyces/Magnesium Ferment, CI 19140 (Yellow 5), Adansonia Digitata (Seed) Oil,
+                            Saccharomyces/Iron Ferment, Tocopherol, CI 14700 (Red 4), Saccharomyces/Zinc Ferment, Saccharomyces/Copper Ferment,
+                            Saccharomyces/Silicon Fermen.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Кондиционер «Шелковый уход» CARE SATIN OIL CONDITIONER KEUNE, 250 мл, 1000 мл (424)
+                            </h2>
+                            <p class="project-border__text">Комплекс Satin Oil линии Care основан на уникальном сочетании набора благородных масел и природных минералов. Комплекс
+                            предназначен для тусклых и сухих волос и воздействует на все слои волоса: укрепляет структуру, увлажняет и придает
+                            здоровый блеск, а также обеспечивает оптимальный баланс для здоровья кожи головы. Масло моной и масло семян папайи
+                            проникают в самую серединку волоса и восстанавливают сухие и поврежденные участки. Сладкое миндальное масло увлажняет
+                            верхние слои, расположенные за кутикулой. Масло янгу смягчает, разглаживает и защищает волосяной ствол благодаря
+                            натуральным антиоксидантам, омега 6 и 9, жирным кислотам. Дополнительное питание и оптимальный баланс влажности
+                            достигается благодаря природным минералам, входящие во все продукты линии Care.
+                            </p>
+                        </div>
+                    
+                </li>
+                <!--project 3-->
+                <li class="project__item">
+                   
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairMaskSilkKeune.jpg"
+                                alt="Маска Шелковый уход — CARE SATIN OIL MASK KEUNE, 50мл, 200 мл, 500мл (425)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Cetearyl Alcohol, Behentrimonium Chloride, Stearamidopropyl Dimethylamine, Cetyl Esters, Glycerin,
+                            Helianthus Annuus Hybrid (Sunflower Seed) Oil, Hydrogenated Castor Oil/Sebacic Acid Copolymer, Quaternium-87, Isopropyl
+                            Alcohol, Propylene Glycol, Citric Acid, Candelilla Cera (Euphorbia Cerifera (Candelilla) Wax), Caprylyl Glycol,
+                            Panthenol, Sodium Benzoate, Cocos Nucifera (Coconut) Oil, Parfum (Fragrance), Passiflora Incarnata (Seed) Oil,
+                            Hydrolyzed Wheat Protein, Gardenia Tahitensis Flower Extract, Saccharomyces/Magnesium Ferment, CI 19140 (Yellow 5),
+                            Adansonia Digitata (Seed) Oil, Saccharomyces/Iron Ferment, Tocopherol, CI 14700 (Red 4), Saccharomyces/Zinc Ferment,
+                            Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Маска Шелковый уход — CARE SATIN OIL MASK KEUNE, 50мл, 200 мл, 500мл (425)
+                            </h2>
+                            <p class="project-border__text">Нидерландский косметический бренд Keune, неизменно заботясь о сохранении красоты и здоровья вашей шевелюры, разработал
+                            уникальное средство, обладающее высокой эффективностью в восстановлении и щадящим действием. Care Line Satin Oil
+                            Treatment — отличный препарат для сухих волос. Он насыщает их полезными масляными компонентами, которые в нужных
+                            пропорциях собраны в инновационной формуле этой маски. Кроме того, она содержит ценные природные минералы. Ваши волосы
+                            подпитываются изнутри, делаясь мягкими, гладкими и струящимися, словно жидкий шелк. Маска Шелковый уход отлично подойдет
+                            в качестве лечебной для пересушенной и ослабленной шевелюры или же станет дополнением уходовой линейки Care Line Satin
+                            Oil для любительниц средств из этой серии.</p>
+                        </div>
+                 
+                </li>
+                <!--project 4-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairShProtectKeune.jpg"
+                                alt="KEUNE Шампунь Экстра защита от солнца — CARE SUN SHIELD SHAMPOO KEUNE, 300 мл (427)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Sodium Laureth Sulfate, Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Sodium Chloride, Sodium
+                            Thiosulfate, Hydrolyzed Wheat Protein, Glycol Distearate, Panthenol, PEG-200 Hydrogenated Glyceryl Palmate, PEG-40
+                            Hydrogenated Castor Oil, Parfum (Fragrance), Cocamide MEA, Polyquaternium-10, Diazolidinyl Urea, PEG-7 Glyceryl Cocoate,
+                            Tetrasodium EDTA, Citric Acid, Propylene Glycol, Polyquaternium-7, Methylparaben, Laureth-10, Sodium Styrene/Acrylates
+                            Copolymer, Glyceryl Laurate, Sodium Cocoyl Hydrolyzed Wheat Protein, Propylparaben, Sodium Benzoate, Formic Acid,
+                            Phenoxyethanol, Saccharomyces/Magnesium Ferment, Saccharomyces/Iron Ferment, Saccharomyces/Zinc Ferment,
+                            Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment, Ethylparaben, Alpha-Isomethyl Ionone, Benzyl Salicylate,
+                            Hexyl Cinnamal, Limonene, Linalool.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Шампунь»Экстра защита» от солнца — CARE SUN SHIELD SHAMPOO KEUNE, 300 мл (427)
+                            </h2>
+                            <p class="project-border__text">Защита от солнца сухих, пористых и поврежденных волос. Для мягкого очищения и увлажнения волос и тела. Природные
+                            минералы, провитамин В5 и комплекс «Анти-хлор» предотвращают воздействия UV-лучей, удаляют хлор и морскую соль, увлажняя
+                            волосы, кожу головы и тело.
+                            </p>
+                        </div>
+                   
+                </li>
+                <!--project 5-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairConProtectKeune.jpg"
+                                alt="Кондиционер «Экстра Защита» — CARE SUN SHIELD CONDITIONER KEUNE, 250 мл"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Sodium Laureth Sulfate, Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Sodium Chloride, Sodium
+                            Thiosulfate, Hydrolyzed Wheat Protein, Glycol Distearate, Panthenol, PEG-200 Hydrogenated Glyceryl Palmate, PEG-40
+                            Hydrogenated Castor Oil, Parfum (Fragrance), Cocamide MEA, Polyquaternium-10, Diazolidinyl Urea, PEG-7 Glyceryl Cocoate,
+                            Tetrasodium EDTA, Citric Acid, Propylene Glycol, Polyquaternium-7, Methylparaben, Laureth-10, Sodium Styrene/Acrylates
+                            Copolymer, Glyceryl Laurate, Sodium Cocoyl Hydrolyzed Wheat Protein, Propylparaben, Sodium Benzoate, Formic Acid,
+                            Phenoxyethanol, Saccharomyces/Magnesium Ferment, Saccharomyces/Iron Ferment, Saccharomyces/Zinc Ferment,
+                            Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment, Ethylparaben, Alpha-Isomethyl Ionone, Benzyl Salicylate,
+                            Hexyl Cinnamal, Limonene, Linalool.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Кондиционер «Экстра Защита» — CARE SUN SHIELD CONDITIONER KEUNE, 250 мл</h2>
+                            <p class="project-border__text">CARE SUN SHIELD CONDITIONER воздействует на сухие и пористые локоны, которые часто подвергаются
+                            опасному воздействию солнечных лучей. Масло ши обеспечивает
+                            деликатное кондиционирование и оживление волос, насыщает волосяные волокна всеми полезными ингредиентами, а также
+                            улучшает общую структуру прядей, позволяя им стать более крепкими и более шелковистыми. Активные УФ-фильтры, проникают глубоко в структуру каждого локона и остаются внутри даже после смывания
+                            кондиционера с волос, тем самым обеспечивая сверхнадежную защиту. А инновационные полимеры придают прядям изумительную
+                            гладкость и существенно облегчают расчесывание.</p>
+                        </div>
+                    
+                </li>
+                <!--project 6-->
+                <li class="project__item">
+                 
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairButProtectKeune.jpg"
+                                alt="Масло «Экстра защита» — CARE SUN SHIELD OIL KEUNE, 140 мл"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Alcohol Denat., Dimethicone, Octyldodecanol, Trisiloxane, Ethylhexyl Methoxycinnamate, Aqua (Water), Squalane,
+                            Tocopheryl Acetate, Parfum (Fragrance), Propylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Glycerin, Butylene
+                            Glycol, Saccharomyces/Magnesium Ferment, Saccharomyces/Iron Ferment, Saccharomyces/Zinc Ferment, Saccharomyces/Copper
+                            Ferment, Ginkgo Biloba Leaf Extract, Saccharomyces/Silicon Ferment, Alpha-Isomethyl Ionone, Benzyl Salicylate,
+                            Citronellol, Hexyl Cinnamal, Limonene, Linalool.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Масло «Экстра защита» — CARE SUN SHIELD OIL KEUNE, 140 мл</h2>
+                            <p class="project-border__text">Защитное масло для волос и тела с УФ-фильтрами, Витамином E и увлажнителями. Масло «Экстра защита» обеспечивает SPF 8,
+                            водоустойчиво. Свалан, натуральное масло оливы, Ориназол из риса и витамин E защищают волосы и тело, придают волосам
+                            объем и блеск. Фактор защиты 8 предохраняет волосы и кожу от повреждения УФ — излучением; Сквалан Масло образует
+                            тончайшую пленку вокруг волоса, защищая его от негативных внешних воздействий и от потери влаги. Витамин E поддерживает
+                            эффект Ориназола , придает волосам объем и блеск. Масло сохраняет яркость цвета. Рекомендуется для волос и кожи,
+                            находящихся на солнце.</p>
+                        </div>
+                  
+                </li>
+                <!--project 7-->
+                <li class="project__item">
+                   
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairShCerKeune.jpg"
+                                alt="Шампунь «Кератиновый комплекс» — CARE KERATIN SMOOTH SHAMPOO KEUNE, 80мл, 300 мл, 1000 мл"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Sodium Laureth Sulfate, Cocamidopropyl Betaine, Decyl Glucoside, PEG-200 Hydrogenated Glyceryl Palmate,
+                            Sodium Chloride, Glycol Distearate, Glyceryl Laurate, Panthenol, PEG-120 Methyl Glucose Dioleate, PEG-60 Hydrogenated
+                            Castor Oil, Polysilicone-18 Cetyl Phosphate, PEG-7 Glyceryl Cocoate, Polyquaternium-10, Sodium Benzoate, Cocamide MEA,
+                            Citric Acid, Methoxy PEG/PPG-7/3 Aminopropyl Dimethicone, Parfum (Fragrance), Propylene Glycol, Laureth-10,
+                            Hydroxypropyltrimonium Corn/Wheat/Soy Amino Acids, Formic Acid, Hydrolyzed Keratin, Keratin, Oxidized Keratin,
+                            Saccharomyces/Magnesium Ferment, Phenoxyethanol, Saccharomyces/Iron Ferment, Saccharomyces/Zinc Ferment,
+                            Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment, Hexyl Cinnamal, Limonene, Linalool.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Шампунь «Кератиновый комплекс» — CARE KERATIN SMOOTH SHAMPOO KEUNE, 80мл, 300 мл, 1000 мл</h2>
+                            <p class="project-border__text">Эффективное восстановление прядей возможно благодаря особой формуле этого шампуня. Продукт обогащен ценным провитамином
+                            В5, который призван восстановить естественный баланс влажности локонов. Также он влияет на увлажнение кожного покрова
+                            головы, избавляя от неприятного ощущения сухости и зуда. Наличие в составе шампуня уникального комплекса Quat Complex
+                            помогает обеспечить полноценную защиту прядей от повреждений и неблагоприятного воздействия окружающей среды.</p>
+                        </div>
+                   
+                </li>
+                <!--project 8-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairConCerKeune.png"
+                                alt="Кондиционер «Кератиновый комплекс» — CARE KERATIN SMOOTH CONDITIONER KEUNE, 80мл, 250 мл, 1000 мл " width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Cetearyl Alcohol, Paraffinum Liquidum (Mineral Oil), Cetrimonium Chloride, Behentrimonium Chloride,
+                            Butyrospermum Parkii (Shea) Butter, Lactic Acid, Sodium Benzoate, Silicone Quaternium-22, Oleyl Erucate,
+                            Polyquaternium-37, Isopropyl Alcohol, Panthenol, Polysilicone-18 Cetyl Phosphate, PPG-3 Myristyl Ether, Parfum
+                            (Fragrance), Propylene Glycol, Polyquaternium-10, PPG-1 Trideceth-6, Hydrolyzed Keratin, Keratin, Oxidized Keratin,
+                            Phenoxyethanol, Hydrolyzed Silk, Saccharomyces/Magnesium Ferment, Saccharomyces/Iron Ferment, Saccharomyces/Zinc
+                            Ferment, Potassium Sorbate, Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment, Hexyl Cinnamal, Limonene.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Кондиционер «Кератиновый комплекс» — CARE KERATIN SMOOTH CONDITIONER KEUNE, 80мл, 250 мл, 1000 мл</h2>
+                            <p class="project-border__text">Кератин, на основе которого разработан кондиционер, проникает глубоко в основу каждого волоска и сглаживает его изнутри,
+                            делая локоны шелковистыми и послушными. Масло ши устраняет много проблем с волосами, например, ломкость, посеченность,
+                            выпадение и перхоть. Создатели кондиционера также добавили в него уникальный комплекс Quat Complex, специально
+                            разработанный компанией Keune. Благодаря ему волосы будут полностью защищены от вредоносного воздействия солнца, утюжков
+                            и фена, и даже от механического воздействия, например, слишком частого расчесывания. Вместе с кодиционером «Кератиновый
+                            комплекс», разработанным фирмой Keune в Нидерландах, ваши волосы станут гораздо красивее и эластичнее.</p>
+                        </div>
+                   
+                </li>
+                <!--project 9-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairMaskCerKeune.png"
+                                alt="Маска «Кератиновый комплекс» — CARE KERATIN SMOOTH MASK KEUNE, 50 мл, 200 мл, 500мл"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water), Cetearyl Alcohol, Behentrimonium Chloride, Glycerin, Octyldodecanol, Cyclopentasiloxane, Cetrimonium
+                            Chloride, Amodimethicone, Isopropyl Alcohol, Hydrolyzed Wheat Protein, Polysilicone-18 Cetyl Phosphate, Sodium Benzoate,
+                            Hydrolyzed Vegetable Protein PG-Propyl Silanetriol, Dimethiconol, Lactic Acid, Parfum (Fragrance), Propylene Glycol,
+                            Hydrolyzed Keratin, Keratin, Oxidized Keratin, Trideceth-12, Phenoxyethanol, Hydrolyzed Silk, Potassium Sorbate,
+                            Saccharomyces/Magnesium Ferment, Saccharomyces/Iron Ferment, Saccharomyces/Zinc Ferment, Saccharomyces/Copper Ferment,
+                            Saccharomyces/Silicon Ferment, Hexyl Cinnamal, Limonene.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Маска «Кератиновый комплекс» — CARE KERATIN SMOOTH MASK KEUNE, 50 мл, 200 мл, 500мл</h2>
+                            <p class="project-border__text">Keratin Smooth Mask — интенсивная маска для жестких и поврежденных волос, восстанавливает силу и блеск. Как следует из
+                            названия, в неё входит кератин, волокнистый белок, содержащийся в ваших волосах. Эта маска идеально подходит для сухих
+                            или поврежденных волос. Пептиды погружаются глубоко под поверхность каждой нити, чтобы восстановить повреждения, в то
+                            время как кератин укрепляет и помогает предотвратить поломку. Эта роскошная процедура обогащает волосы кератином,
+                            значительно улучшая их силу и добавляя красивый блеск.</p>
+                        </div>
+                   
+                </li>
+                <!--project 10-->
+                <li class="project__item">
+                   
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairSprayCerKeune.jpg"
+                                alt="Двухфазный-спрей Кератиновый комплекс — CARE KERATIN SMOOTH 2-PHASE SPRAY KEUNE, 200 мл"
+                                width="100%" />
+                            <p class="project-thumb__title">Aqua (Water), Cyclopentasiloxane, PEG-12 Dimethicone, Lactic Acid, Cetrimonium Chloride, Phenyl Trimethicone, Sodium
+                            Benzoate, Polyquaternium-4, Hydrolyzed Keratin, Dimethiconol, Benzophenone-4, Parfum (Fragrance), Propylene Glycol,
+                            Polysilicone-18 Cetyl Phosphate, Phenoxyethanol, Potassium Sorbate, Saccharomyces/Magnesium Ferment, CI 42090 (Blue 1),
+                            Saccharomyces/Iron Ferment, Saccharomyces/Zinc Ferment, Saccharomyces/Copper Ferment, Saccharomyces/Silicon Ferment,
+                            Hexyl Cinnamal, Limonene, Linalool.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title aside">Двухфазный-спрей Кератиновый комплекс — CARE KERATIN SMOOTH 2-PHASE SPRAY KEUNE, 200 мл
+                            </h2>
+                            <p class="project-border__text">Мгновенно кондиционирующий спрей распутывает волосы, регулирует балан влажности, укрепляет и выпрямляет волосы.
+                            Предотвращает пушистость, облегчает расчесывание. Обогащает волосы кератином и технологией силсофт, которые регулируют
+                            баланс влаги, одновременно придавая силу и разглаживая волосы. Низкий уровень рН смягчает кутикулу и усиливает блеск
+                            волос.</p>
+                        </div>
+                  
+                </li>
+                <!--project 11-->
+                <li class="project__item">
+                   
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairElixirCerKeune.png"
+                                alt="Эликсир кератиновий спрей — CARE MIRACLE ELIXIR KERATIN SPRAY KEUNE, 140 мл"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Активные компоненты:
+                            • Кератин - восстанавливает и защищает структуру волоса.
+                            • Quats комплекс - обеспечивает более легкое расчесывание.
+                            • Кокосовое масло - увлажняет волосы изнутри.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Эликсир кератиновий спрей — CARE MIRACLE ELIXIR KERATIN SPRAY KEUNE, 140 мл
+                            </h2>
+                            <p class="project-border__text">Роскошный спрей для домашнего ухода на основе кератина продлевает результаты профессионального лечения Miracle Elixir.
+                            Это помогает поддерживать начальный уровень мягкости после процедуры даже после 5 помывок головы.
+                            </p>
+                        </div>
+                    
+                </li>
+                <!--project 12-->
+                <li class="project__item">
+                   
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairOilTreatmentKeune.jpg"
+                                alt="Масло для тонких и нормальных волос «Шелковый уход» — CARE SATIN OIL — OIL TREATMENT KEUNE, 95 мл " width="100%" />
+                            <p class="project-thumb__title aside">Cyclopentasiloxane, Dimethiconol, Adansonia Digitata (Seed) Oil, Cocos Nucifera (Coconut) Oil, Passiflora Incarnata
+                            (Seed) Oil, Propylene Glycol, Parfum (Fragrance), Ethylhexyl Methoxycinnamate, Diethylamino Hydroxybenzoyl Hexyl
+                            Benzoate, Gardenia Tahitensis Flower Extract, Tocopherol, CI 47000 (Yellow 11), Butylphenyl Methylpropional, Geraniol.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Масло для тонких и нормальных волос «Шелковый уход» — CARE SATIN OIL — OIL TREATMENT KEUNE, 95 мл
+                            </h2>
+                            <p class="project-border__text">Препарат кондиционирует, придает волосам сияние, облегчает укладку, защищает локоны от солнечных лучей и горячего
+                            воздуха. В основе комплекса Satin Oil — благородные масла и природные минералы. Препарат укрепляет волосы, увлажняет их,
+                            придает здоровый блеск, нормализует кожу головы. Масло маракуйи отдает вашим волосам свои уникальные витамины, укрепляет
+                            их, защищает от сечения и ломкости; масла моной и семян папайи увлажняют волос и восстанавливают его структуру; масло
+                            сладкого миндаля щедро питает волосы, успокаивая кожу головы; масло янгу хорошо смягчает, защищая волосы от выцветания и
+                            выпадения; Природные минералы дополняют действие великолепных экзотических масел, обеспечивая волосам дополнительное
+                            питание.</p>
+                        </div>
+                    
+                </li>
+                <!--project 13-->
+                <li class="project__item">
+                   
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairFillerCareKeune.jpg"
+                                alt="Крем-филлер Основное питание / CARE Vital Nutr Porosity Filler 50 мл" width="100%" />
+                            <p class="project-thumb__title aside">Керамиды - "ремонтируют" поврежденную кутикулу, укрепляют сцепление чешуек волоса, устраняют повреждения и отслаивание
+                            клеток на стержне, добавляя силу волосам. Керамиды быстро проникают в структуру повреждённого волоса и это объясняется
+                            тем, что сам волос имеет пористую структуру.
+                            Протеины пшеницы - увлажняют, защищают и питают. Поддерживают цвет окрашенных волос. Эффективно восстанавливают и
+                            поддерживают секущиеся кончики волос, продлевая жизнь волосу и придавая ухоженный вид. Создают вокруг волоса защитную
+                            пленочку, снижая раздражающее действие ПАВов (поверхностно-активных веществ), защищая от солнечных лучей.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Крем-филлер Основное питание / CARE Vital Nutr Porosity Filler 50 мл
+                            </h2>
+                            <p class="project-border__text">Крем-наполнитель Основное питание для уменьшения пористости волос
+                            
+                            Средство Vital Nutrition Porosity Filler от бренда Keune — концентрированный крем, обогащенный керамидами и протеинами
+                            пшеницы, которые усиливают волокона волоса и улучшают его внутреннюю структуру. Nutri-Injection Technology образует
+                            защитный слой вокруг поврежденных частей волос, поэтому волосы восстанавливаются и снова выглядят здоровыми.
+                            
+                            Результат: Крем-наполнитель Основное питание обновляет и оживляет поврежденные волосы.</p>
+                        </div>
+                    
+                </li>
+                <!--project 14-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/hairElixirMirKeune.jpg"
+                                alt="Миракл Эликсир Бустер Конц.кератиновый бустер/ MIRACLE ELIXIR KERATIN BOOSTER KEUNE, 140 мл" width="100%" />
+                            <p class="project-thumb__title aside">Кератин - позволяет восстановить поврежденные участки и сделать их поверхность гладкой. Чем ровнее поверхность
+                            ороговевшего слоя, тем лучше отражается свет, становится ярче блеск. Регулярное использование такого средства позволяет
+                            постоянно поддерживать уровень белков в норме. Кроме того, кератин удерживает влагу. Используется в качестве средства
+                            профилактики выпадения волос и нарушения их структуры. Это вещество, заполняя собой поврежденные места в структуре
+                            волос, устраняют дефицит натуральных компонентов. Помогает при посеченных концах, ломких и сухих волосах.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Миракл Эликсир Бустер Конц.кератиновый бустер/ MIRACLE ELIXIR KERATIN BOOSTER KEUNE, 140 мл
+                            </h2>
+                            <p class="project-border__text">Концентрированный кератиновый бустер.
+                            Concentrated Keratin Booster от бренда Keune — глубоко увлажняющий и восстанавливающий уход для поврежденных волос.
+                            После применения ухода «Miracle Elixir», богатого кератином, внутренняя структура поврежденных волос восстанавливается
+                            на 80%. Как результат, в 2 раза больше мягкости волос.
+                            
+                            Состоит из сложного кератинового микса (Keratin, Hydrolyzed keratin, Oxidized Keratin), который благодаря Zipper
+                            технологии (технология молнии) создает эффект натурального кератина в волосе и восстанавливает волосы снаружи и изнутри.</p>
+                        </div>
+                    
+                </li>
+                <!--project 15-->
+                <li class="project__item">
+                    
+                        <div class="project__thumb project-thumb man">
+                            <img class="project-thumb__hair15" src="./images/hairSprayProt13Keune.png"
+                                alt="Спрей защита от влаги STYLE HUMIDITY SHIELD №13 KEUNE, 200 мл" />
+                            <p class="project-thumb__title aside">Alcohol Denat., Dimethyl Ether, Octylacrylamide/Acrylates/Butylaminoethyl Methacrylate Copolymer, Isopropyl Alcohol,
+                            Aminomethyl Propanol, Dipropylene Glycol, Parfum (Fragrance), Dimethicone, Trisiloxane, Benzophenone-4.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Спрей защита от влаги STYLE HUMIDITY SHIELD №13 KEUNE, 200 мл
+                            </h2>
+                            <p class="project-border__text">Спрей защита от влаги STYLE HUMIDITY SHIELD, No 13. Легкий невесомый завершающий спрей для волос. Удерживает волосы от
+                            пушистости при влажности на 24 часа. Новый аромат, содержит УФ фильтр.</p>
+                        </div>
+                    
+                </li>
+            </ul>    
+        </div>
+    </section>
+
+    <footer>
+        <section class="section-footer">
+            <div class="container footer">
+                <div class="footer__box">
+                    <nav class="footer__menu">
+                        <!-- Logo-->
+                        <a class="logo" href="index.html" title="Логотип компании"><span
+                                class="logo-web">Repair&</span>Care</a>
+                        <!--Footer Menu Nav-->
+                        <ul class="footer__menu-nav footer-menu-nav">
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Политика конфинденциальности">Политика конфинденциальности</a></li>
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Согласие на обработку персональных данных">Согласие на обработку персональных
+                                    данных</a></li>
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Политика возврата средств">Политика возврата средств</a></li>
+                        </ul>
+                        <a class="inctagram" href="https://www.instagram.com/p/CTXWqMDjHoX/?utm_medium=share_sheet"
+                            title="ссылка в инстаграм">Мы
+                            в instagram</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

@@ -125,6 +125,8 @@
 
     color: $footer-logo-color;
 
+    overflow-y: scroll;
+
     @media screen and (max-width: 479px) {
       padding: 77px 24px;
       font-size: 3.758vw; /*18px*/
@@ -198,5 +200,7 @@
     letter-spacing: 0.03em;
     line-height: 1.9;
     margin: 0;
+    height: 150px;
+    overflow-y: scroll;
   }
 }

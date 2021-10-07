@@ -228,6 +228,10 @@ a {
   color: inherit;
 }
 
+.project-thumb__hair15 {
+  width: 100%;
+}
+
 /*3portfolio*/
 /*--Портфолио--*/
 @media screen and (max-width: 767px) {
@@ -368,6 +372,7 @@ a {
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: #ffffff;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 479px) {
@@ -458,6 +463,8 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.9;
   margin: 0;
+  height: 150px;
+  overflow-y: scroll;
 }
 
 .section-man {
