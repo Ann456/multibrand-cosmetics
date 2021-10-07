@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <section class="section-header">
+            <div class="container header">
+                <div class="main-menu">
+                    <nav class="menu">
+                        <!-- Logo-->
+                        <a class="menu__link" href="https://www.instagram.com/p/CTXWqMDjHoX/?utm_medium=share_sheet"
+                            title="ссылка в инстаграм">Мы в instagram</a>
+                        <a class="logo" href="index.html" title="Логотип компании">Repair&Care</a>
+
+                        <!--Menu Nav-->
+                        <ul class="menu-nav">
+                            <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--current"
+                                    href="10about.html" title="Студия">О компании</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Портфолио">Доставка и
+                                    оплата</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Отзывы</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Новости</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Возврат
+                                    товара или средств</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile-menu -->
+                <div class="mobile">
+                    <!-- button-open -->
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Tel E-mail-->
+                    <ul class="header-tel">
+                        <li class="header-tel__item">
+                            <a class="header-tel__link" href="mailto:info@devstudio.com" title="Почтовый адресс">
+                                <svg class="header-tel__icon" width="16" height="12">
+                                    <use href="./images/inst.svg#clip0"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="header-tel__item">
+                            <a class="header-tel__link" href="tel:+380961111111" title="Номер телефона">
+                                <svg class="header-tel__icon" width="10" height="16">
+                                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 1111
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="menu-container js-menu-container" id="mobile-nav">
+                        <!-- button-close -->
+                        <button class="menu-toggle js-close-menu">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <!-- menu-container__mobile -->
+                        <div class="menu-container__mobile">
+                            <!-- mobile-nav -->
+                            <ul class="mobile-nav">
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="10about.html"
+                                        title="О компании">О компании</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="9dellivery.html"
+                                        title="Доставка и оплата">Доставка и оплата</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="8contacts.html"
+                                        title="Контакты">Контакты</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Отзывы">Отзывы</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Новости">Новости</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Возврат">Возврат товара и средств</a></li>
+                            </ul>
+
+                            <!-- Tel E-mail-->
+                            <ul class="mobile-header-tel-email">
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--tel" href="tel:+380961111111"
+                                        title="Номер телефона">
+                                        +38 096 111 1111
+                                    </a>
+                                </li>
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--email" href="mailto:info@devstudio.com"
+                                        title="Почтовый адресс">
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- mobile-social-links-->
+                            <ul class="mobile-social-links">
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link"
+                                        href="https://www.instagram.com/repaircare_shop/"
+                                        title="Instagram">Instagram</a></li>
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link" href="#"
+                                        title="Facebook">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <!--project 1-->
+        <ul class="section-projects__project project"></ul>
+            <li class="project__item">
+                <img class="project__img-children" src="./images/childSprayHairEstel.jpg"
+                        alt="Детский спрей для волос «Легкое расчесывание» ESTEL LITTLE ME, 200 мл (1309)" width="100%" /> 
+                <div class="project__border project-border">
+                    <button class="filters__button filters__button-center" type="button">Добавить в
+                        корзину</button>
+                    <div>    
+                        <ul>
+                            <li class="submenu-link">Состав
+                                <ul class="submenu">
+                                    Aqua, Cyclopentasiloxane, Dimethiconol, Phenyl Trimethicone, Isododecane,
+                                    Hydrolyzed Wheat Protein, PEG/PPG -15/15
+                                    Dimethicone, Lactic Acid, Cetrimonium Chloride, Panthenol, Phenoxyethanol, Sodium Benzoate, Parfum,
+                                    Limonene, Cinnamal,
+                                    Citral, Linalool, Eugenol, Geraniol, C.I. 17200, C.I. 19140.
+                                </ul>
+                            </li>
+                            <li class="submenu-link">Применение
+                                <ul class="submenu">
+                                    Перед использованием взболтать. Можно применять ежедневно как на сухие, так и на влажные волосы.
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="project-border__title">Детский спрей для волос «Легкое расчесывание» ESTEL LITTLE ME, 200 мл (1309)
+                    </h2>
+                    <p class="project-border__text">Детский спрей для волос Estel Little Me — это двухфазное средство, обогащенное
+                        полезными активными компонентами. Продукт
+                        облегчает расчесывание, делает волосы блестящими, мягкими и шелковистыми. Предотвращает электризацию волос.
+                    </p>
+                </div>    
+
+            </li>
+        </ul>
+
+   
+            
+                
+           
+        
+    </section>
+
+    <footer>
+        <section class="section-footer">
+            <div class="container footer">
+                <div class="footer__box">
+                    <nav class="footer__menu">
+                        <!-- Logo-->
+                        <a class="footer__logo logo" href="index.html" title="Логотип компании"><span
+                                class="logo-web">Repair&</span>Care</a>
+                        <!--Footer Menu Nav-->
+                        <ul class="footer__menu-nav footer-menu-nav">
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Политика конфинденциальности">Политика конфинденциальности</a></li>
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Согласие на обработку персональных данных">Согласие на обработку персональных
+                                    данных</a></li>
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Политика возврата средств">Политика возврата средств</a></li>
+                        </ul>
+                        <a class="inctagram" href="https://www.instagram.com/p/CTXWqMDjHoX/?utm_medium=share_sheet"
+                            title="ссылка в инстаграм">Мы
+                            в instagram</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+    
+</html>

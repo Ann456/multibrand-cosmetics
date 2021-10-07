@@ -8,6 +8,17 @@
 }
 
 .filters {
+  position: sticky;
+  top: -1px;
+
+  margin: 0;
+  padding: 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  z-index: 2;
+
   display: flex;
   list-style: none;
   padding: 0;
@@ -96,6 +107,14 @@
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 3 * 45px) / 3);
       margin: 15px;
+    }
+  }
+
+  &__img {
+    transition: 1s;
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
     }
   }
 }
@@ -193,6 +212,7 @@
     color: $body-color;
 
     margin-bottom: 4px;
+    height: 120px;
   }
 
   &__text {
@@ -203,4 +223,41 @@
     height: 150px;
     overflow-y: scroll;
   }
+}
+
+/*Состав и приминение*/
+
+.submenu-link {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+
+  color: #181414;
+  padding: 15px 30px;
+}
+.submenu-link:hover {
+  font-size: 20px;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  min-width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(245, 229, 232);
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.submenu-link:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.submenu-box {
+  display: flex;
 }

@@ -81,6 +81,22 @@ a {
   background-position: center;
 }
 
+.chat-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("https://image.flaticon.com/icons/svg/2925/2925365.svg");
+  background-size: contain;
+  cursor: pointer;
+}
+
 .container.header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -242,6 +258,14 @@ a {
 }
 
 .filters {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,6 +375,16 @@ a {
   }
 }
 
+.project__img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project__img:hover, .project__img:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .project-thumb {
   position: relative;
   overflow: hidden;
@@ -456,6 +490,7 @@ a {
   line-height: 2;
   color: #6e4f4f;
   margin-bottom: 4px;
+  height: 120px;
 }
 
 .project-border__text {
@@ -465,6 +500,48 @@ a {
   margin: 0;
   height: 150px;
   overflow-y: scroll;
+}
+
+/*Состав и приминение*/
+.submenu-link {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: #181414;
+  padding: 15px 30px;
+}
+
+.submenu-link:hover {
+  font-size: 20px;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  min-width: 180px;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #f5e5e8;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.submenu-link:hover .submenu {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.submenu-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-man {
