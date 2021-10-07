@@ -537,6 +537,12 @@ a {
   }
 }
 
+.project__img-children {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* About-us */
 .about-us__text {
   margin-bottom: 10px;

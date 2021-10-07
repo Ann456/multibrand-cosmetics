@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <section class="section-header background">
+            <div class="container header">
+                <div class="main-menu">
+                    <nav class="menu">
+                        <!-- Logo-->
+                        <a class="menu__link" href="https://www.instagram.com/p/CTXWqMDjHoX/?utm_medium=share_sheet"
+                            title="ссылка в инстаграм">Мы в instagram</a>
+                        <a class="logo" href="index.html" title="Логотип компании">Repair&Care</a>
+
+                        <!--Menu Nav-->
+                        <ul class="menu-nav">
+                            <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--current"
+                                    href="10about.html" title="Студия">О компании</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Портфолио">Доставка и
+                                    оплата</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Отзывы</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Новости</a>
+                            </li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="#" title="Контакты">Возврат
+                                    товара или средств</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Mobile-menu -->
+                <div class="mobile">
+                    <a class="mobile__logo logo" href="index.html" title="Логотип компании">Repair&Care</a>
+                    <!-- button-open -->
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <div class="menu-container js-menu-container" id="mobile-nav">
+                        <!-- button-close -->
+                        <button class="menu-toggle js-close-menu">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <!-- menu-container__mobile -->
+                        <div class="menu-container__mobile">
+                            <!-- mobile-nav -->
+                            <ul class="mobile-nav">
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="10about.html"
+                                        title="О компании">О
+                                        компании</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="9dellivery.html"
+                                        title="Доставка и оплата">Доставка и оплата</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="8contacts.html"
+                                        title="Контакты">Контакты</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Отзывы">Отзывы</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Новости">Новости</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#"
+                                        title="Возврат">Возврат товара и
+                                        средств</a></li>
+                            </ul>
+
+                            <!-- Tel E-mail-->
+                            <ul class="mobile-header-tel-email">
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--tel" href="tel:+380961111111"
+                                        title="Номер телефона">
+                                        +38 096 111 1111
+                                    </a>
+                                </li>
+                                <li class="mobile-header-tel-email__item">
+                                    <a class="mobile-header-tel-email__link--email" href="mailto:info@devstudio.com"
+                                        title="Почтовый адресс">
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- mobile-social-links-->
+                            <ul class="mobile-social-links">
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link"
+                                        href="https://www.instagram.com/repaircare_shop/"
+                                        title="Instagram">Instagram</a></li>
+                                <li class="mobile-social-links__item"><a class="mobile-social-links__link" href="#"
+                                        title="Facebook">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <section class="section">
+        <div class="container man">
+            <!--filters-->
+            <ul class="section-projects__filters filters">
+                <li class="filters__item"><button class="filters__button" type="button">Лицо</button>
+                </li>
+                <li class="filters__item"><button class="filters__button" type="button">Тело</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Волосы</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Наборы</button></li>
+                <li class="filters__item"><button class="filters__button" type="button"> <a href="5man.html">Для
+                            мужчин</a></button>
+                </li>
+                <li class="filters__item"><button class="filters__button" type="button"><a href="4children.html">Для детей</a></button></li>
+            </ul>
+            <!--Projects-->
+            <ul class="section-projects__project project">
+                <!--project 1-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childSprayRevlon.jpg" alt="СПРЕЙ 2-ФАЗНЫЙ УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ ДЛЯ ДЕТЕЙ EQUAVE KIDS 2 PHASE SPRAY REVLON, 200 мл (313)" width="100%" />
+                            <p class="project-thumb__title aside">Aqua (Water (Eau)), Cyclopentasiloxane, PEG-12 Dimethicone, Dimethicone, Disiloxane, Gluconolactone, Polyquaternium-6,
+                            Disodium EDTA, Polyquaternium-16, Lactic Acid, Phenyl Trimethicone, Dimethiconol, Cocodimonium Hydroxypropyl Hydrolyzed
+                            Wheat Protein, Wheat Amino Acids, Glycerin, Sodium Chloride, Cocodimonium Hydroxypropyl Hydrolyzed Keratin, Pyrus Malus
+                            (Apple) Fruit Extract, Benzophenone-4, Parfum (Fragrance), Sodium Benzoate</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">СПРЕЙ 2-ФАЗНЫЙ УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ ДЛЯ ДЕТЕЙ EQUAVE KIDS 2 PHASE SPRAY REVLON, 200 мл (313)</h2>
+                            <p class="project-border__text">Детские волосы нуждаются в особом уходе, ведь от их состояния зависит здоровье волос в более взрослом возрасте. Марка
+                            Revlon Professional выпустила для этих целей специальную линейку средств. Кондиционер не содержит в своем составе
+                            парабены, красители и прочие агрессивные химические элементы. Формула средства обогащена пшеничными протеинами, которые
+                            эффективно увлажняют и защищают волосы. UVA/UVB фильтры создают барьер против вредных ультрафиолетовых лучей. Средство
+                            абсолютно гипоаллергенно. Огромное преимущество кондиционера в том, что его не надо смывать. Выпущено средство в форме
+                            спрея, поэтому им очень удобно пользоваться. Кондиционер облегчает расчесывание и препятствует электризации. Теперь
+                            малыш с удовольствием будет ждать процедур ухода за волосами. Кондиционер обладает ароматом зеленого, свежего яблочка.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 2-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childSHRevlon.jpg"
+                                alt="ШАМПУНЬ 2 в 1 УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ ДЛЯ ДЕТЕЙ EQUAVE KIDS 2 in 1 SHAMPOO REVLON, 300 мл (314)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Water (Aqua), Sodium Lauroyl Methyl Isethionate, Cocamidopropyl Betaine, Glycerin, Sodium Chloride, PEG-60 Hydrogenated
+                            Castor Oil, PEG-150 Pentoerythrityl Tetrastearate, Polyquaternium-10, PEG-6, Caprylic/Capric Glycerides, Disodium EDTA,
+                            Panthenol, Pyrus Malas (Apple) Fruit Extract, Parfum (Fragrance), Phenoxyethanol, Methylisothiazolinone. Время
+                            применения: универсальноеТип волос: все типыВозраст: 3+Пол: унисекс</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">ШАМПУНЬ 2 в 1 УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ ДЛЯ ДЕТЕЙ EQUAVE KIDS 2 in 1 SHAMPOO REVLON, 300 мл (314)
+                            </h2>
+                            <p class="project-border__text">Счастливые родители! Заботливые папы и мамы маленьких детишек! Детский шампунь 2 в 1 от Revlon Professional создан
+                            именно для вас. Он бережно поухаживает за волосами вашего малыша, подарив им идеальную чистоту, силу и мягкость. Шампунь
+                            порадует дитя легким и свежим ароматом. Он абсолютно гипоаллергенен и создан на основе натуральных компонентов; подходит
+                            для детей возрастом от трех лет и справляется с мытьем даже самых длинных и густых волос. Данный шампунь чудесно пахнет
+                            сочным зеленым яблоком. Он отлично пенится и совсем не щиплет глазки. Продукт деликатно очищает волосы и кожу головы.
+                            Испанский шампунь увлажняет и питает нежный кожный покров, защищая от появления пересыхания, зуда и шелушения. Средство
+                            делает детские волосы шелково-мягкими, крепкими и послушными. С ним купание превратится для малыша в веселую забаву,
+                            которая подарит замечательное настроение. 
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 3-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childConRevlon.jpg"
+                                alt="КОНДИЦИОНЕР ДЕТСКИЙ EQUAVE KIDS PRINCESS CONDIT REVLON, 200 мл (315)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Не содержит парабены, красители, аллергены, сульфаты.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">КОНДИЦИОНЕР ДЕТСКИЙ EQUAVE KIDS PRINCESS CONDIT REVLON, 200 мл (315)
+                            </h2>
+                            <p class="project-border__text">Мягкие детские волосы требуют особенного ухода, поэтому выбирая для своего ребенка уходовые продукты для очищения и
+                            кондиционирования прядей, позаботьтесь о том, чтобы средства обладали качественным составом и не вредили структуре
+                            волос. Двухфазный кондиционер для детских волос от бренда Revlon Professional предназначен для частого использования.
+                            Мягкая формула продукта обогащена кератином, благодаря чему средство обладает укрепляющим и регенерирующим свойством.
+                            Кондиционер содержит UVA и UVB фильтры, что обеспечивает стопроцентную защиту от вредного воздействия солнечных лучей.
+                            Средство придает волосам блеск, гладкость, мягкость и здоровое сияние. Кондиционер оказывает антистатический эффект.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 4-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childShPrRevlon.jpg"
+                                alt="ШАМПУНЬ ДЕТСКИЙ ПРИНЦЕССА EQUAVE KIDS PRINCESS SHAMPOO REVLON, 300 мл (316)""
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua/Water/Eau, Sodium Lauroyl Methyl Isethionate, Cocamidopropyl Betaine, PEG-150 Pentaerythriltyl Tetrastearate,
+                            Glycerin, Disodium EDTA, Hydroxyacetophenone, Isopropyl Alcohol, Lauric Acid, PEG-6, Caprylic/Capric Glycerides,
+                            Panthenol, Polyquaternium-10, Sodium Acetate, Sodium Chloride, Sodium Methyl Isethionate, Trisodium Ethylenediamine
+                            Disuccinate, Zinc Laurate, Parfum (Fragrance), Limonene, Linalool, Phenoxyethanol.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">ШАМПУНЬ ДЕТСКИЙ ПРИНЦЕССА EQUAVE KIDS PRINCESS SHAMPOO REVLON, 300 мл (316)
+                            </h2>
+                            <p class="project-border__text">Нежный шампунь без сульфатов был специально разработан для маленьких принцесс. Он очень нежно очищает волосы, насыщая их
+                            витамином В и сбалансированным уходом.
+                            Волосы получают достаточное количество питания и увлажнения, обретая здоровый блеск.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 5-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childCreamEstel.jpg"
+                                alt="Детский крем для лица и тела ESTEL LITTLE ME, 100 мл (1303)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">AAqua, Isododecane, Cyclopentasiloxane, Polyquaternium-16, Diazolidinyl Urea, Methylparaben, Propylparaben, Phenyl
+                            Trimethicone, Dimethiconol, Sodium PCA, Phenoxyethanol, Parfum, Limonene, Cinnamal, Citral, Linalool, Eugenol, Geraniol,
+                            Hydrolyzed Silk, Calcium Sodium Borosilicate, Titanium Dioxide, Tin Oxide, Lactic Acid, CI 17200, CI 19140.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детский крем для лица и тела ESTEL LITTLE ME, 100 мл (1303)</h2>
+                            <p class="project-border__text">Нежно ухаживает за кожей малыша. Благодаря уникальным растительным сахарам оказывает увлажняющее и смягчающее действие.
+                            Легкие питательные масла оливы и ши, а также воск рисовых отрубей предотвращают потерю влаги, защищают от негативного
+                            воздействия внешней среды, помогают поддерживать естественную барьерную функцию кожи.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 6-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childMilkEstel.jpg"
+                                alt="Детское молочко для тела после солнца ESTEL LITTLE ME, 150 мл (1304)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua, Isododecane, Cyclopentasiloxane, Polyquaternium-16, Diazolidinyl Urea, Methylparaben, Propylparaben, Phenyl
+                            Trimethicone, Dimethiconol, Sodium PCA, Phenoxyethanol, Parfum, Limonene, Cinnamal, Citral, Linalool, Eugenol, Geraniol,
+                            Hydrolyzed Silk, Calcium Sodium Borosilicate, Titanium Dioxide, Tin Oxide, Lactic Acid, CI 17200, CI 19140.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детское молочко для тела после солнца ESTEL LITTLE ME, 150 мл (1304)</h2>
+                            <p class="project-border__text">Нежная детская кожа чрезвычайно сильно подвержена солнечным ожогам, наличие эффективного солнцезащитного
+                            средства просто обязательно. Молочко Estel Professional Little Me надежно защищает нежную детскую кожу от вредного
+                            воздействия солнечных лучей. Водоотталкивающий компонент сохраняет защитные свойства молочка даже во время и после
+                            купания.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 7-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img class="project__img-children" src="./images/childBalEstel.jpg"
+                                alt="Детский бальзам-пенка для волос ESTEL LITTLE ME Легкое расчесывание, 150 мл (1305)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua, Cetrimonium Chloride, PEG-12 Dimethicone, Sodium Benzoate, PEG-40 Hydrogenated Castor Oil, Parfum,
+                            Hydroxyethylcellulose, Lactic Acid.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детский бальзам-пенка для волос ESTEL LITTLE ME Легкое расчесывание, 150 мл (1305)</h2>
+                            <p class="project-border__text">Детский бальзам-пенка Estel Little Me создан для самой нежной заботы о тонких, вьющихся, непослушных, длинных и очень
+                            длинных детских волосах. Профессиональная формула бальзама предотвращает спутывание кудрей, делает прядки послушными,
+                            блестящими, мягкими и более сильными.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 8-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img class="project__img-children" src="./images/childShEstel.jpg"
+                                alt="Детский шампунь для волос «Бережный уход» ESTEL LITTLE ME, 200 мл (1306)" width="100%" />
+                            <p class="project-thumb__title aside">Aqua, Sodium Laureth Sulfate, Cocamidopropyl Hydroxysultaine, PEG-4 Rapeseedamide, Disodium Laureth Sulfosuccinate,
+                            Polyquatemium-7, Sodium Chloride, Butylene Glycol, Malic Acid, Prunus Amygdalus Dulcis Seed Extract, Actinidia Chinensis
+                            Fruit Juice, Citrus Aurantium Duclis Juice, Citrus Paradisi Juice, Pyrus Malus Juice, PEG-40 Hydrogenated Castor Oil,
+                            Sodium Benzoate, Parfum, Alpha-Glucan Oligosaccharide, Citric Acid, Tetrasodium EDTA.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детский шампунь для волос «Бережный уход» ESTEL LITTLE ME, 200 мл (1306)</h2>
+                            <p class="project-border__text">Детский шампунь «Бережный уход» Estel Little Me деликатно ухаживает за волосами и кожей головы ребенка, делает пряди
+                            мягкими, послушными, шелковистыми. Превосходное ухаживающее и защитное действие обеспечивает инновационный компонент —
+                            пребиотик BioEcolia®.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 9-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img class="project__img-children" src="./images/childSprayEstel.jpg"
+                                alt="Детский спрей-сияние для волос ESTEL LITTLE ME, 100 мл (1307)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua, Isododecane, Cyclopentasiloxane, Polyquaternium-16, Diazolidinyl Urea, Methylparaben, Propylparaben, Phenyl
+                            Trimethicone, Dimethiconol, Sodium PCA, Phenoxyethanol, Parfum, Limonene, Cinnamal, Citral, Linalool, Eugenol, Geraniol,
+                            Hydrolyzed Silk, Calcium Sodium Borosilicate, Titanium Dioxide, Tin Oxide, Lactic Acid, CI 17200, CI 19140.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детский спрей-сияние для волос ESTEL LITTLE ME, 100 мл (1307)</h2>
+                            <p class="project-border__text">Детский спрей-сияние для волос Estel Little Me содержит полезные активные компоненты и мерцающие частицы, которые
+                            придают прядям волшебный блеск, не утяжеляя их.
+                            Estel Professional — это производитель профессиональных средств для ухода за волосами, ресницами и кожей. Эксперты
+                            бренда разрабатывают и производят более 1000 наименований продукции, которая пользуется спросом не только у обычных
+                            потребителей, но и у профессионалов.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 10-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img class="project__img-children" src="./images/childSh2Estel.jpg"
+                                alt="Детский шампунь для волос «Легкое расчесывание» ESTEL LITTLE ME, 200 мл (1308)"
+                                width="100%" />
+                            <p class="project-thumb__title">Aqua, Disodium Laureth Sulfosuccinate, Sodium Laureth Sulfate, Decyl Glucoside, Cocamidopropyl Hydroxysultaine, PEG-4
+                            Rapeseed Amide, PEG-120 Methyl Glucose Trioleate, Propylene Glycol, Polyquaternium-10, Glycerin, Sorbitol, Panthenol,
+                            Carboxymethyl Chitin, Sodium Hyaluronate, Alpha-glucan Oligosaccharide, Diazolidinyl Urea, Methylparaben, Propylparaben,
+                            Parfum, Citric Acid, Bisabolol.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title aside">Детский шампунь для волос «Легкое расчесывание» ESTEL LITTLE ME, 200 мл (1308)
+                            </h2>
+                            <p class="project-border__text">Детский шампунь «Легкое расчесывание» Estel Little Me предотвращает спутывание волос во время мытья, предотвращает
+                            электризацию прядей. Подходит даже для очень длинных волос. Содержит олигосахарид BioEcolia®, который стимулирует
+                            естественную защиту прядей и кожи головы.</p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 11-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img class="project__img-children" src="./images/childSprayHairEstel.jpg"
+                                alt="Детский спрей для волос «Легкое расчесывание» ESTEL LITTLE ME, 200 мл (1309)"
+                                width="100%" />
+                            <p class="project-thumb__title aside">Aqua, Cyclopentasiloxane, Dimethiconol, Phenyl Trimethicone, Isododecane, Hydrolyzed Wheat Protein, PEG/PPG -15/15
+                            Dimethicone, Lactic Acid, Cetrimonium Chloride, Panthenol, Phenoxyethanol, Sodium Benzoate, Parfum, Limonene, Cinnamal,
+                            Citral, Linalool, Eugenol, Geraniol, C.I. 17200, C.I. 19140.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детский спрей для волос «Легкое расчесывание» ESTEL LITTLE ME, 200 мл (1309)
+                            </h2>
+                            <p class="project-border__text">Детский спрей для волос Estel Little Me — это двухфазное средство, обогащенное полезными активными компонентами. Продукт
+                            облегчает расчесывание, делает волосы блестящими, мягкими и шелковистыми. Предотвращает электризацию волос.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!--project 12-->
+                <li class="project__item">
+                    <a href="#" class="project__link">
+                        <div class="project__thumb project-thumb man">
+                            <img src="./images/childBathEstel.jpg"
+                                alt="Детская пена для ванны ESTEL LITTLE ME, 500 мл (1310)" width="100%" />
+                            <p class="project-thumb__title aside">Aqua, Sodium Laureth Sulfate, Sodium Laureth-5 Carboxylate, Cocamide DEA, Cocamidopropul Betaine, Sodium Chloride,
+                            Parfum, Aloe Barbadensis Leaf Juice, Sodium Benzoate, Alpha-Glucan Oligosaccharide, Polysorbate 20, Citric Acid.</p>
+                        </div>
+                        <div class="project__border project-border">
+                            <button class="filters__button filters__button-center" type="button">Добавить в
+                                корзину</button>
+                            <h2 class="project-border__title">Детская пена для ванны ESTEL LITTLE ME, 500 мл (1310)
+                            </h2>
+                            <p class="project-border__text">Подарите малышу замечательный уход, нежное удовольствие и возможность вволю побегать, делая из густой пены бороды и
+                            парики, замки и корабли. Мягкая ароматная пена с алоэ вера и олигосахаридами BioEcolia® * предоставляет приятное
+                            расслабляющее действие, мягко очищает, увлажняет кожу и стимулирует ее естественную защиту.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <section class="section-footer">
+            <div class="container footer">
+                <div class="footer__box">
+                    <nav class="footer__menu">
+                        <!-- Logo-->
+                        <a class="logo" href="index.html" title="Логотип компании"><span
+                                class="logo-web">Repair&</span>Care</a>
+                        <!--Footer Menu Nav-->
+                        <ul class="footer__menu-nav footer-menu-nav">
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Политика конфинденциальности">Политика конфинденциальности</a></li>
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Согласие на обработку персональных данных">Согласие на обработку персональных
+                                    данных</a></li>
+                            <li class="footer-menu-nav__item"><a class="footer-menu-nav__link" href="#"
+                                    title="Политика возврата средств">Политика возврата средств</a></li>
+                        </ul>
+                        <a class="inctagram" href="https://www.instagram.com/p/CTXWqMDjHoX/?utm_medium=share_sheet"
+                            title="ссылка в инстаграм">Мы
+                            в instagram</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
