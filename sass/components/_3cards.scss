@@ -68,6 +68,9 @@
     cursor: pointer;
     border: 0;
 
+    margin-left: auto;
+    margin-right: auto;
+
     transition: background 250ms $timing-function, color 250ms $timing-function;
 
     &:hover,
@@ -93,6 +96,8 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
         margin-bottom: 30px;
@@ -115,6 +120,7 @@
     &:hover,
     &:focus {
       transform: scale(1.5);
+      z-index: 3;
     }
   }
 }
@@ -199,8 +205,8 @@
   border-bottom: 1px solid $project-item-border;*/
 
   padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
 
   &__title {
     font-family: "Roboto", ‘Raleway’ sans-serif;
@@ -211,8 +217,12 @@
     line-height: 2;
     color: $body-color;
 
-    margin-bottom: 4px;
+    margin-bottom: 10px;
+
     height: 120px;
+  }
+  .main {
+    height: auto;
   }
 
   &__text {

@@ -1,0 +1,326 @@
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $modal-background;
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 250ms $timing-function;
+
+  overflow-y: scroll;
+}
+
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: initial;
+}
+
+.modal {
+  position: absolute;
+
+  padding: 40px 39px 40px 41px;
+
+  top: 50%;
+  left: 50%;
+
+  @media screen and (max-width: 479px) {
+    min-height: 609px;
+    min-width: 350px;
+  }
+
+  @media screen and (min-width: 480px) {
+    min-height: 609px;
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+  }
+
+  background-color: $footer-logo-color;
+  box-shadow: 0px 1px 3px $modal-box-shadow1, 0px 1px 1px $modal-box-shadow3,
+    0px 2px 1px $modal-box-shadow2;
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: transform 250ms $timing-function;
+
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.button-close {
+  position: relative;
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+
+  background: $footer-logo-color;
+  border: 1px solid $modal-btn-close-border;
+  border-radius: 50% 50%;
+  transition: background 250ms $timing-function, fill 250ms $timing-function;
+
+  cursor: pointer;
+  &:hover {
+    fill: $footer-logo-color;
+    background: $logo-color;
+  }
+
+  &:focus {
+    fill: $footer-logo-color;
+    background: $logo-color;
+  }
+}
+
+.icon-close {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.modal {
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+
+    color: $body-color;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 4px;
+  }
+
+  &__box.last {
+    margin-bottom: 0;
+  }
+
+  &__svg {
+    margin-left: 12px;
+    top: 25%;
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+    fill: $body-color;
+
+    transition: fill 250ms $timing-function;
+
+    .form-field:focus-within & {
+      fill: $logo-color;
+    }
+  }
+
+  &__label {
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: $tel-color;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
+  }
+
+  &__input {
+    height: 40px;
+  }
+
+  &__textarea,
+  &__input {
+    margin: 0;
+    padding-top: 11px;
+    padding-left: 42px;
+    padding-bottom: 11px;
+
+    border: 1px solid $modal-input-border;
+    border-radius: 4px;
+    outline: none;
+
+    transition: border 250ms $timing-function;
+
+    .form-field:focus-within & {
+      border: 1px solid $logo-color;
+    }
+  }
+}
+
+.form-field {
+  &__input {
+    &::placeholder {
+      color: $modal-input-placeholder;
+    }
+  }
+}
+
+.form-field {
+  &__textarea {
+    height: 120px;
+    padding: 12px 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: $modal-textarea;
+  }
+}
+
+.checkbox {
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__label {
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1.7px solid $body-color;
+    border-radius: 2px;
+    background-color: $footer-logo-color;
+    transition: border-color 250ms $timing-function,
+      background-color 250ms $timing-function;
+  }
+
+  &__input:checked + &__icon {
+    background-image: url("../images/icon-check-2.svg");
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-color: $logo-color;
+    border-color: $logo-color;
+  }
+
+  &__text {
+    display: flex;
+    padding-left: 8.38px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+
+    color: $tel-color;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    padding-left: 3px;
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration-line: underline;
+
+    color: $logo-color;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.button--send {
+  font-family: "Roboto", ‘Raleway’ sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 55px;
+
+  color: $footer-logo-color;
+
+  background: $logo-color;
+  box-shadow: 0px 4px 4px $button-hero-shadow;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    background: $button-hero;
+    box-shadow: 0px 4px 4px $button-hero-shadow;
+    border-radius: 4px;
+  }
+  &:focus {
+    background: $button-hero;
+    box-shadow: 0px 4px 4px $button-hero-shadow;
+    border-radius: 4px;
+  }
+}
